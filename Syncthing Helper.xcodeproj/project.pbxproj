@@ -1,0 +1,411 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C19F23911B26F95C00654743 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C19F23901B26F95C00654743 /* AppDelegate.swift */; };
+		C19F23931B26F95C00654743 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C19F23921B26F95C00654743 /* Images.xcassets */; };
+		C19F23961B26F95C00654743 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = C19F23941B26F95C00654743 /* MainMenu.xib */; };
+		C19F23A21B26F95D00654743 /* Syncthing_HelperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C19F23A11B26F95D00654743 /* Syncthing_HelperTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C19F239C1B26F95D00654743 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C19F23831B26F95C00654743 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C19F238A1B26F95C00654743;
+			remoteInfo = "Syncthing Helper";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		C19F238B1B26F95C00654743 /* Syncthing Helper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Syncthing Helper.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C19F238F1B26F95C00654743 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C19F23901B26F95C00654743 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C19F23921B26F95C00654743 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		C19F23951B26F95C00654743 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		C19F239B1B26F95D00654743 /* Syncthing HelperTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Syncthing HelperTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C19F23A01B26F95D00654743 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C19F23A11B26F95D00654743 /* Syncthing_HelperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Syncthing_HelperTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C19F23881B26F95C00654743 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C19F23981B26F95D00654743 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C19F23821B26F95C00654743 = {
+			isa = PBXGroup;
+			children = (
+				C19F238D1B26F95C00654743 /* Syncthing Helper */,
+				C19F239E1B26F95D00654743 /* Syncthing HelperTests */,
+				C19F238C1B26F95C00654743 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C19F238C1B26F95C00654743 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C19F238B1B26F95C00654743 /* Syncthing Helper.app */,
+				C19F239B1B26F95D00654743 /* Syncthing HelperTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C19F238D1B26F95C00654743 /* Syncthing Helper */ = {
+			isa = PBXGroup;
+			children = (
+				C19F23901B26F95C00654743 /* AppDelegate.swift */,
+				C19F23921B26F95C00654743 /* Images.xcassets */,
+				C19F23941B26F95C00654743 /* MainMenu.xib */,
+				C19F238E1B26F95C00654743 /* Supporting Files */,
+			);
+			path = "Syncthing Helper";
+			sourceTree = "<group>";
+		};
+		C19F238E1B26F95C00654743 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C19F238F1B26F95C00654743 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C19F239E1B26F95D00654743 /* Syncthing HelperTests */ = {
+			isa = PBXGroup;
+			children = (
+				C19F23A11B26F95D00654743 /* Syncthing_HelperTests.swift */,
+				C19F239F1B26F95D00654743 /* Supporting Files */,
+			);
+			path = "Syncthing HelperTests";
+			sourceTree = "<group>";
+		};
+		C19F239F1B26F95D00654743 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C19F23A01B26F95D00654743 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C19F238A1B26F95C00654743 /* Syncthing Helper */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C19F23A51B26F95D00654743 /* Build configuration list for PBXNativeTarget "Syncthing Helper" */;
+			buildPhases = (
+				C19F23871B26F95C00654743 /* Sources */,
+				C19F23881B26F95C00654743 /* Frameworks */,
+				C19F23891B26F95C00654743 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Syncthing Helper";
+			productName = "Syncthing Helper";
+			productReference = C19F238B1B26F95C00654743 /* Syncthing Helper.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C19F239A1B26F95D00654743 /* Syncthing HelperTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C19F23A81B26F95D00654743 /* Build configuration list for PBXNativeTarget "Syncthing HelperTests" */;
+			buildPhases = (
+				C19F23971B26F95D00654743 /* Sources */,
+				C19F23981B26F95D00654743 /* Frameworks */,
+				C19F23991B26F95D00654743 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C19F239D1B26F95D00654743 /* PBXTargetDependency */,
+			);
+			name = "Syncthing HelperTests";
+			productName = "Syncthing HelperTests";
+			productReference = C19F239B1B26F95D00654743 /* Syncthing HelperTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C19F23831B26F95C00654743 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = "Jelmer van der Linde";
+				TargetAttributes = {
+					C19F238A1B26F95C00654743 = {
+						CreatedOnToolsVersion = 6.3.2;
+					};
+					C19F239A1B26F95D00654743 = {
+						CreatedOnToolsVersion = 6.3.2;
+						TestTargetID = C19F238A1B26F95C00654743;
+					};
+				};
+			};
+			buildConfigurationList = C19F23861B26F95C00654743 /* Build configuration list for PBXProject "Syncthing Helper" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C19F23821B26F95C00654743;
+			productRefGroup = C19F238C1B26F95C00654743 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C19F238A1B26F95C00654743 /* Syncthing Helper */,
+				C19F239A1B26F95D00654743 /* Syncthing HelperTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C19F23891B26F95C00654743 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C19F23931B26F95C00654743 /* Images.xcassets in Resources */,
+				C19F23961B26F95C00654743 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C19F23991B26F95D00654743 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C19F23871B26F95C00654743 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C19F23911B26F95C00654743 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C19F23971B26F95D00654743 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C19F23A21B26F95D00654743 /* Syncthing_HelperTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C19F239D1B26F95D00654743 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C19F238A1B26F95C00654743 /* Syncthing Helper */;
+			targetProxy = C19F239C1B26F95D00654743 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C19F23941B26F95C00654743 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C19F23951B26F95C00654743 /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C19F23A31B26F95D00654743 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C19F23A41B26F95D00654743 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		C19F23A61B26F95D00654743 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "Syncthing Helper/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		C19F23A71B26F95D00654743 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "Syncthing Helper/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		C19F23A91B26F95D00654743 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Syncthing HelperTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Syncthing Helper.app/Contents/MacOS/Syncthing Helper";
+			};
+			name = Debug;
+		};
+		C19F23AA1B26F95D00654743 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Syncthing HelperTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Syncthing Helper.app/Contents/MacOS/Syncthing Helper";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C19F23861B26F95C00654743 /* Build configuration list for PBXProject "Syncthing Helper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C19F23A31B26F95D00654743 /* Debug */,
+				C19F23A41B26F95D00654743 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C19F23A51B26F95D00654743 /* Build configuration list for PBXNativeTarget "Syncthing Helper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C19F23A61B26F95D00654743 /* Debug */,
+				C19F23A71B26F95D00654743 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		C19F23A81B26F95D00654743 /* Build configuration list for PBXNativeTarget "Syncthing HelperTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C19F23A91B26F95D00654743 /* Debug */,
+				C19F23AA1B26F95D00654743 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C19F23831B26F95C00654743 /* Project object */;
+}
