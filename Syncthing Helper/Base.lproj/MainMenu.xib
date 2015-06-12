@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="6233" systemVersion="14A329f" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="7706" systemVersion="14E26a" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="6233"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="7706"/>
     </dependencies>
     <objects>
         <customObject id="-2" userLabel="File's Owner" customClass="NSApplication">
@@ -11,9 +11,10 @@
         </customObject>
         <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
         <customObject id="-3" userLabel="Application" customClass="NSObject"/>
-        <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModuleProvider="target">
+        <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModule="Syncthing_Helper" customModuleProvider="target">
             <connections>
-                <outlet property="window" destination="QvC-M9-y7g" id="gIp-Ho-8D9"/>
+                <outlet property="popover" destination="BRP-E6-vfV" id="RbQ-qh-Drd"/>
+                <outlet property="statusBarMenu" destination="2Bz-ol-WQw" id="stP-Xx-23w"/>
             </connections>
         </customObject>
         <customObject id="YLy-65-1bz" customClass="NSFontManager"/>
@@ -666,15 +667,45 @@
                 </menuItem>
             </items>
         </menu>
-        <window title="Syncthing Helper" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" animationBehavior="default" id="QvC-M9-y7g">
-            <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
-            <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
-            <rect key="contentRect" x="335" y="390" width="480" height="360"/>
-            <rect key="screenRect" x="0.0" y="0.0" width="1920" height="1177"/>
-            <view key="contentView" id="EiT-Mj-1SZ">
-                <rect key="frame" x="0.0" y="0.0" width="480" height="360"/>
-                <autoresizingMask key="autoresizingMask"/>
-            </view>
-        </window>
+        <menu id="2Bz-ol-WQw">
+            <items>
+                <menuItem title="Open website…" id="N2n-k5-bPL">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <connections>
+                        <action selector="openWebsite:" target="Voe-Tx-rLC" id="Rla-CC-XbI"/>
+                    </connections>
+                </menuItem>
+                <menuItem title="Quit" id="Xpw-F7-2zS">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <connections>
+                        <action selector="quit:" target="Voe-Tx-rLC" id="la3-6r-U72"/>
+                    </connections>
+                </menuItem>
+            </items>
+        </menu>
+        <viewController id="9bK-GI-aQZ" userLabel="Popover View Controller" customClass="FoldersViewController" customModule="Syncthing_Helper" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="wxg-G4-E5V" id="HAS-ts-Ndn"/>
+            </connections>
+        </viewController>
+        <popover id="BRP-E6-vfV">
+            <connections>
+                <outlet property="contentViewController" destination="9bK-GI-aQZ" id="Jaj-VC-Wm4"/>
+            </connections>
+        </popover>
+        <view id="wxg-G4-E5V">
+            <rect key="frame" x="0.0" y="0.0" width="276" height="378"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <subviews>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="l2N-cN-mU4">
+                    <rect key="frame" x="108" y="181" width="60" height="17"/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Hey daar" id="GzV-oo-FzG">
+                        <font key="font" metaFont="system"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+            </subviews>
+        </view>
     </objects>
 </document>

@@ -11,6 +11,12 @@
 		C19F23931B26F95C00654743 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C19F23921B26F95C00654743 /* Images.xcassets */; };
 		C19F23961B26F95C00654743 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = C19F23941B26F95C00654743 /* MainMenu.xib */; };
 		C19F23A21B26F95D00654743 /* Syncthing_HelperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C19F23A11B26F95D00654743 /* Syncthing_HelperTests.swift */; };
+		C19F23AE1B27016200654743 /* SyncthingAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = C19F23AD1B27016200654743 /* SyncthingAPI.swift */; };
+		C1D002421B2B03840076D629 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1D002411B2B03840076D629 /* SwiftyJSON.swift */; };
+		C1D73FCA1B29A7DA00D2213E /* AppIcon.icns in Resources */ = {isa = PBXBuildFile; fileRef = C1D73FC91B29A7DA00D2213E /* AppIcon.icns */; };
+		C1D73FD41B29BD1600D2213E /* icon template.svg in Resources */ = {isa = PBXBuildFile; fileRef = C1D73FD31B29BD1600D2213E /* icon template.svg */; };
+		C1D73FD61B29BD2F00D2213E /* icon template.pdf in Resources */ = {isa = PBXBuildFile; fileRef = C1D73FD51B29BD2F00D2213E /* icon template.pdf */; };
+		C1D73FDB1B29C41C00D2213E /* FoldersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1D73FD91B29C41C00D2213E /* FoldersViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,6 +38,12 @@
 		C19F239B1B26F95D00654743 /* Syncthing HelperTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Syncthing HelperTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C19F23A01B26F95D00654743 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C19F23A11B26F95D00654743 /* Syncthing_HelperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Syncthing_HelperTests.swift; sourceTree = "<group>"; };
+		C19F23AD1B27016200654743 /* SyncthingAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SyncthingAPI.swift; sourceTree = "<group>"; };
+		C1D002411B2B03840076D629 /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
+		C1D73FC91B29A7DA00D2213E /* AppIcon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = AppIcon.icns; sourceTree = "<group>"; };
+		C1D73FD31B29BD1600D2213E /* icon template.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "icon template.svg"; sourceTree = "<group>"; };
+		C1D73FD51B29BD2F00D2213E /* icon template.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "icon template.pdf"; sourceTree = "<group>"; };
+		C1D73FD91B29C41C00D2213E /* FoldersViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoldersViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,10 +85,13 @@
 		C19F238D1B26F95C00654743 /* Syncthing Helper */ = {
 			isa = PBXGroup;
 			children = (
+				C1D002411B2B03840076D629 /* SwiftyJSON.swift */,
 				C19F23901B26F95C00654743 /* AppDelegate.swift */,
+				C19F23AD1B27016200654743 /* SyncthingAPI.swift */,
 				C19F23921B26F95C00654743 /* Images.xcassets */,
 				C19F23941B26F95C00654743 /* MainMenu.xib */,
 				C19F238E1B26F95C00654743 /* Supporting Files */,
+				C1D73FD91B29C41C00D2213E /* FoldersViewController.swift */,
 			);
 			path = "Syncthing Helper";
 			sourceTree = "<group>";
@@ -84,6 +99,9 @@
 		C19F238E1B26F95C00654743 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				C1D73FD31B29BD1600D2213E /* icon template.svg */,
+				C1D73FD51B29BD2F00D2213E /* icon template.pdf */,
+				C1D73FC91B29A7DA00D2213E /* AppIcon.icns */,
 				C19F238F1B26F95C00654743 /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -150,7 +168,8 @@
 		C19F23831B26F95C00654743 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0630;
+				LastSwiftUpdateCheck = 0700;
+				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = "Jelmer van der Linde";
 				TargetAttributes = {
 					C19F238A1B26F95C00654743 = {
@@ -187,7 +206,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				C19F23931B26F95C00654743 /* Images.xcassets in Resources */,
+				C1D73FD41B29BD1600D2213E /* icon template.svg in Resources */,
 				C19F23961B26F95C00654743 /* MainMenu.xib in Resources */,
+				C1D73FCA1B29A7DA00D2213E /* AppIcon.icns in Resources */,
+				C1D73FD61B29BD2F00D2213E /* icon template.pdf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -205,7 +227,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C1D73FDB1B29C41C00D2213E /* FoldersViewController.swift in Sources */,
+				C19F23AE1B27016200654743 /* SyncthingAPI.swift in Sources */,
 				C19F23911B26F95C00654743 /* AppDelegate.swift in Sources */,
+				C1D002421B2B03840076D629 /* SwiftyJSON.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,6 +285,7 @@
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -326,6 +352,7 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = "Syncthing Helper/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "nl.ikhoefgeen.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -337,6 +364,7 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = "Syncthing Helper/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "nl.ikhoefgeen.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -356,6 +384,7 @@
 				);
 				INFOPLIST_FILE = "Syncthing HelperTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "nl.ikhoefgeen.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Syncthing Helper.app/Contents/MacOS/Syncthing Helper";
 			};
@@ -372,6 +401,7 @@
 				);
 				INFOPLIST_FILE = "Syncthing HelperTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "nl.ikhoefgeen.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Syncthing Helper.app/Contents/MacOS/Syncthing Helper";
 			};
@@ -396,6 +426,7 @@
 				C19F23A71B26F95D00654743 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C19F23A81B26F95D00654743 /* Build configuration list for PBXNativeTarget "Syncthing HelperTests" */ = {
 			isa = XCConfigurationList;
@@ -404,6 +435,7 @@
 				C19F23AA1B26F95D00654743 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
